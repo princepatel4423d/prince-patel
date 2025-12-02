@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+* {
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    color: #0a0a0a;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+html.dark {
+  background-color: #0a0a0a;
+  color: #fafafa;
+}
+
+:root {
+    /* fonts */
+    --font-playfair: 'Playfair Display', serif;
+    --font-playfair-sc: 'Playfair Display SC', serif;
+    --font-poppins: 'Poppins', sans-serif;
+
+    /* smooth scrolling */
+    --scrollbar-width: 8px;
+}
+
+.font-playfair {
+    font-family: var(--font-playfair);
+}
+
+.font-playfair-sc {
+    font-family: var(--font-playfair-sc);
+}
+
+.font-poppins {
+    font-family: var(--font-poppins);
+}
+
+@layer base {
+
+    .prose h2,
+    .prose h3 {
+        scroll-margin-top: 5rem;
+    }
+}
+
+/* Smooth theme and color transitions */
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.4);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 100, 100, 0.7);
+}
+
+/* fade-in effect for pages or sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skill marquee */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+
+/* Rotating Wheel */
+.rotate-circle {
+  animation: spin-smooth 8s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin-smooth {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

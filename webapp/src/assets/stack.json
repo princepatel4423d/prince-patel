@@ -1,0 +1,77 @@
+{
+  "Programming languages": [
+    { "name": "Python", "icon": "Python", "faded": true },
+    { "name": "Javascript", "icon": "JavaScript", "faded": false },
+    { "name": "Rust", "icon": "Rust", "faded": true },
+    { "name": "Java", "icon": "Java", "faded": false },
+    { "name": "SQL", "icon": "SQLite", "faded": false },
+    { "name": "PHP", "icon": "PHP", "faded": false },
+    { "name": "C", "icon": "C", "faded": false },
+    { "name": "C++", "icon": "CPP", "faded": false },
+    { "name": "C#", "icon": "CSharp", "faded": false }
+  ],
+  "Web development": [
+    { "name": "React", "icon": "React", "faded": false },
+    { "name": "Next.js", "icon": "NextJS", "faded": false },
+    { "name": "Tailwind CSS", "icon": "TailwindCSS", "faded": false },
+    { "name": "HTML5", "icon": "HTML", "faded": false },
+    { "name": "CSS3", "icon": "CSS", "faded": false },
+    { "name": "Sass", "icon": "Sass", "faded": true },
+    { "name": "JQuery", "icon": "JQuery", "faded": true },
+    { "name": "Bootstrap", "icon": "Bootstrap", "faded": false },
+    { "name": "Vite", "icon": "Vite", "faded": false },
+    { "name": "Wordpress", "icon": "Wordpress", "faded": false }
+  ],
+  "Back-end development": [
+    { "name": "Node.js", "icon": "NodeJS", "faded": true },
+    { "name": "ExpressJS", "icon": "ExpressJS", "faded": false },
+    { "name": "FastAPI", "icon": "FastAPI", "faded": true },
+    { "name": "Django", "icon": "Django", "faded": true },
+    { "name": "PostgreSQL", "icon": "PostgreSQL", "faded": true },
+    { "name": "MongoDB", "icon": "MongoDB", "faded": false }
+  ],
+  "Mobile development": [
+    { "name": "Flutter", "icon": "Flutter", "faded": true },
+    { "name": "React Native", "icon": "ReactNative", "faded": false },
+    { "name": "AndroidStudio", "icon": "AndroidStudio", "faded": true },
+    { "name": "Swift", "icon": "Swift", "faded": true },
+    { "name": "Kotlin", "icon": "Kotlin", "faded": true }
+  ],
+  "Desktop development": [
+    { "name": "DotNet", "icon": "DotNet", "faded": false },
+    { "name": "Electron", "icon": "Electron", "faded": true },
+    { "name": "Tauri", "icon": "Tauri", "faded": true },
+    { "name": "PyQt", "icon": "PyQt", "faded": true }
+  ],
+  "Infrastructure and cloud": [
+    { "name": "Docker", "icon": "Docker", "faded": true },
+    { "name": "Kubernetes", "icon": "Kubernetes", "faded": true },
+    { "name": "Nginx", "icon": "Nginx", "faded": true },
+    { "name": "AWS", "icon": "AWS", "faded": false },
+    { "name": "GCP", "icon": "GCP", "faded": true },
+    { "name": "Azure", "icon": "Azure", "faded": true },
+    { "name": "Netlify", "icon": "Netlify", "faded": true },
+    { "name": "Vercel", "icon": "Vercel", "faded": true },
+    { "name": "Terraform", "icon": "Terraform", "faded": true },
+    { "name": "Linux", "icon": "Linux", "faded": true }
+  ],
+  "Misc tools": [
+    { "name": "Git", "icon": "Git", "faded": false },
+    { "name": "GitHub", "icon": "GitHub", "faded": false },
+    { "name": "Npm", "icon": "Npm", "faded": false },
+    { "name": "Postman", "icon": "Postman", "faded": false },
+    { "name": "Figma", "icon": "Figma", "faded": true },
+    { "name": "Photoshop", "icon": "Photoshop", "faded": false },
+    { "name": "PyCharm", "icon": "PyCharm", "faded": false },
+    { "name": "VS Code", "icon": "VSCode", "faded": false },
+    { "name": "VisualStudio", "icon": "VisualStudio", "faded": false },
+    { "name": "Sublime", "icon": "Sublime", "faded": false },
+    { "name": "CodePen", "icon": "CodePen", "faded": false },
+    { "name": "Notion", "icon": "Notion", "faded": true },
+    { "name": "Replit", "icon": "Replit", "faded": false },
+    { "name": "StackOverflow", "icon": "StackOverflow", "faded": false },
+    { "name": "Slack", "icon": "Slack", "faded": true },
+    { "name": "Discord", "icon": "Discord", "faded": false },
+    { "name": "Windows", "icon": "Windows", "faded": true }
+  ]
+}
