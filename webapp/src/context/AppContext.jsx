@@ -7,7 +7,7 @@ export const AppContext = createContext();
 export const AppContextProvider = ({ children }) => {
     axios.defaults.withCredentials = true;
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://prince-patel-server.onrender.com";
     const [isLoggedin, setIsLoggedin] = useState(false);
     const [adminData, setAdminData] = useState(false);
     const [loading, setLoading] = useState(true);
