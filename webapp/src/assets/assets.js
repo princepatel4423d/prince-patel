@@ -9,7 +9,7 @@ import bookImage from '@/assets/images/book.webp';
 import underConstructionImage from '@/assets/images/under-construction.jpg';
 
 import contactImage from './images/contact.avif';
-import Milestone from './images/Milestone.jpg'
+import Milestone from './images/milestone.jpg';
 
 import resume from '@/assets/resume.pdf';
 
