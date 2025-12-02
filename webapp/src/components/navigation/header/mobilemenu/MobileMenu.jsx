@@ -69,7 +69,7 @@ const MobileMenu = () => {
       name: "LICENSE",
       icon: FaRegFile,
       rel: "license",
-      path: "https://github.com/princepatel4423d/my-portfolio/blob/main/LICENSE",
+      path: "https://github.com/princepatel4423d/prince-patel/blob/main/LICENSE",
     },
     {
       name: "Github",
