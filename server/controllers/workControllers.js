@@ -109,14 +109,11 @@ export const updateWork = async (req, res) => {
 
 export const deleteWork = async (req, res) => {
   try {
-    const work = await Work.findById(req.params.id);
-    if (!work) {
-      return res
-        .status(404)
-        .json({ success: false, message: "Work not found" });
-    }
+    const work = await Work.findByIdAndDelete(req.params.id);
 
-    await work.remove();
+    if (!work) {
+      return res.status(404).json({ success: false, message: "Work not found" });
+    }
 
     res.status(200).json({
       success: true,
