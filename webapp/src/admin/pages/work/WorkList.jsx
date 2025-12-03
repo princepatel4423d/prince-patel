@@ -130,18 +130,6 @@ const WorkList = () => {
                 </ul>
               )}
 
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {w.techStack.slice(0, 6).map((t, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 bg-neutral-200 dark:bg-neutral-700 rounded-lg text-sm text-neutral-900 dark:text-neutral-100"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-
               {/* Actions */}
               <div className="flex gap-2 mt-auto">
                 <button
@@ -156,7 +144,11 @@ const WorkList = () => {
                   disabled={deletingId === w._id}
                   className="flex-1 p-2 bg-red-600 text-white rounded-lg hover:bg-red-700 flex justify-center items-center gap-1"
                 >
-                  {deletingId === w._id ? "Deleting..." : <><FiTrash2 size={16} /> Delete</>}
+                  {deletingId === w._id ? "Deleting..." : (
+                    <>
+                      <FiTrash2 size={16} /> Delete
+                    </>
+                  )}
                 </button>
               </div>
             </div>
