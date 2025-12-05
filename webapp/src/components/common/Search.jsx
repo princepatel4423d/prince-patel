@@ -6,32 +6,29 @@ import {
   AiOutlineHome,
   AiOutlineInfoCircle,
   AiOutlinePhone,
-  AiOutlineQuestionCircle,
   AiOutlineFileText,
   AiOutlineCheckCircle,
 } from "react-icons/ai";
-import { FiSun, FiMoon, FiMonitor } from "react-icons/fi";
+import { FiTarget } from "react-icons/fi";
+import { FaRegCopyright } from "react-icons/fa";
+import { IoShareSocialOutline } from "react-icons/io5";
 
 const defaultLinks = {
   Navigation: [
     { name: "Home", path: "/", icon: <AiOutlineHome size={18} /> },
     { name: "About", path: "/about", icon: <AiOutlineInfoCircle size={18} /> },
     { name: "Contact", path: "/contact", icon: <AiOutlinePhone size={18} /> },
-    { name: "Help", path: "/help", icon: <AiOutlineQuestionCircle size={18} /> },
   ],
   Legal: [
     { name: "Privacy Policy", path: "/privacy-policy", icon: <AiOutlineFileText size={18} /> },
     { name: "Terms & Condition", path: "/terms-condition", icon: <AiOutlineCheckCircle size={18} /> },
   ],
-  Theme: [
-    { name: "Light Mode", path: "/theme/light", icon: <FiSun size={18} /> },
-    { name: "Dark Mode", path: "/theme/dark", icon: <FiMoon size={18} /> },
-    { name: "System Theme", path: "/theme/system", icon: <FiMonitor size={18} /> },
-  ],
   Website: [
     { name: "Blog", path: "/blog", icon: <AiOutlineFileText size={18} /> },
-    { name: "Projects", path: "/projects", icon: <AiOutlineFileText size={18} /> },
-    { name: "Services", path: "/services", icon: <AiOutlineFileText size={18} /> },
+    { name: "Projects", path: "/project", icon: <AiOutlineFileText size={18} /> },
+    { name: "Milestones", path: "/milestone", icon: <FiTarget size={18} /> },
+    { name: "Social Links", path: "/social-links", icon: <IoShareSocialOutline size={18} /> },
+    { name: "Attribution", path: "/attribution", icon: <FaRegCopyright size={18} /> },
   ],
 };
 

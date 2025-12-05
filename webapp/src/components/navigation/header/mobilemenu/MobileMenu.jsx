@@ -8,6 +8,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { AiOutlineSend } from "react-icons/ai";
 import { TbNotes } from "react-icons/tb";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import { IoShareSocialOutline } from "react-icons/io5";
 
 import Search from "@/components/common/Search";
 import MobileTheme from "@/components/theme/MobileTheme";
@@ -61,6 +62,7 @@ const MobileMenu = () => {
     { name: "Projects", icon: MdWorkOutline, path: "/project" },
     { name: "Contact", icon: AiOutlineSend, path: "/contact" },
     { name: "Milestone", icon: FiTarget, path: "/milestone" },
+    { name: "Social Links", icon: IoShareSocialOutline, path: "/social-links" },
     { name: "Attribution", icon: FaRegCopyright, path: "/attribution" },
   ];
 
