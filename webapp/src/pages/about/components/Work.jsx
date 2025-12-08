@@ -32,121 +32,126 @@ const Work = () => {
     );
   }
 
-  return (<section className="py-14"> <div className="flex flex-col md:flex-row gap-8">
-    {/* ---------------- Left Title Section ---------------- */} <div className="md:w-1/3 w-full"> <h2 className="flex items-center gap-2 text-3xl font-medium text-neutral-900 dark:text-neutral-100"> <FaBriefcase size={32} /> Work Experience </h2> </div>
+  return (
+    <section className="py-14">
+      <div className="flex flex-col md:flex-row gap-8">
+        {/* ---------------- Left Title Section ---------------- */}
+        <div className="md:w-1/3 w-full">
+          <h2 className="flex items-center gap-2 text-3xl font-medium text-neutral-900 dark:text-neutral-100"> <FaBriefcase size={32} /> Work Experience </h2>
+        </div>
 
-    {/* ---------------- Right Work Cards ---------------- */}
-    <div className="md:w-2/3 w-full flex flex-col gap-6">
-      {works.map((work) => (
-        <div
-          key={work._id}
-          className="w-full border border-neutral-200 dark:border-neutral-700 rounded-xl p-6 bg-white dark:bg-neutral-900 shadow-xs hover:shadow-sm transition"
-        >
-          {/* Role + Duration */}
-          <div className="flex justify-between flex-wrap items-start mb-3">
-            <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-              {work.role}
-            </h3>
+        {/* ---------------- Right Work Cards ---------------- */}
+        <div className="md:w-2/3 w-full flex flex-col gap-6">
+          {works.map((work) => (
+            <div
+              key={work._id}
+              className="w-full border border-neutral-200 dark:border-neutral-700 rounded-xl p-6 bg-white dark:bg-neutral-900 shadow-xs hover:shadow-sm transition"
+            >
+              {/* Role + Duration */}
+              <div className="flex justify-between flex-wrap items-start mb-3">
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  {work.role}
+                </h3>
 
-            <span className="text-base text-neutral-600 dark:text-neutral-400 italic">
-              {formatDate(work.startDate)} to{" "}
-              {work.endDate
-                ? isNaN(Date.parse(work.endDate))
-                  ? work.endDate
-                  : formatDate(work.endDate)
-                : "Present"}
-            </span>
-          </div>
-
-          {/* Title / Position */}
-          <p className="text-base font-medium text-neutral-800 dark:text-neutral-200 mb-3">
-            {work.title}
-          </p>
-
-          {/* Company + Location */}
-          <div className="flex flex-col gap-1 mb-3">
-            {/* Company */}
-            <div className="flex items-center gap-2">
-              <FaBuilding
-                size={16}
-                className="text-neutral-600 dark:text-neutral-400"
-              />
-
-              {work.company?.link ? (
-                <a
-                  href={work.company.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base font-medium text-neutral-900 dark:text-neutral-200 hover:underline"
-                >
-                  {work.company.name}
-                </a>
-              ) : (
-                <span className="text-base font-medium text-neutral-900 dark:text-neutral-200">
-                  {work.company.name}
+                <span className="text-base text-neutral-600 dark:text-neutral-400 italic">
+                  {formatDate(work.startDate)} to{" "}
+                  {work.endDate
+                    ? isNaN(Date.parse(work.endDate))
+                      ? work.endDate
+                      : formatDate(work.endDate)
+                    : "Present"}
                 </span>
-              )}
-            </div>
+              </div>
 
-            {/* Location */}
-            {work.location?.name && (
-              <div className="flex items-center gap-2">
-                <FaMapMarkerAlt
-                  size={14}
-                  className="text-neutral-600 dark:text-neutral-400"
-                />
+              {/* Title / Position */}
+              <p className="text-base font-medium text-neutral-800 dark:text-neutral-200 mb-3">
+                {work.title}
+              </p>
 
-                {work.location?.link ? (
-                  <a
-                    href={work.location.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-neutral-700 dark:text-neutral-300 hover:underline"
-                  >
-                    {work.location.name}
-                  </a>
-                ) : (
-                  <span className="text-sm text-neutral-700 dark:text-neutral-300">
-                    {work.location.name}
-                  </span>
+              {/* Company + Location */}
+              <div className="flex flex-col gap-1 mb-3">
+                {/* Company */}
+                <div className="flex items-center gap-2">
+                  <FaBuilding
+                    size={16}
+                    className="text-neutral-600 dark:text-neutral-400"
+                  />
+
+                  {work.company?.link ? (
+                    <a
+                      href={work.company.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base font-medium text-neutral-900 dark:text-neutral-200 hover:underline"
+                    >
+                      {work.company.name}
+                    </a>
+                  ) : (
+                    <span className="text-base font-medium text-neutral-900 dark:text-neutral-200">
+                      {work.company.name}
+                    </span>
+                  )}
+                </div>
+
+                {/* Location */}
+                {work.location?.name && (
+                  <div className="flex items-center gap-2">
+                    <FaMapMarkerAlt
+                      size={14}
+                      className="text-neutral-600 dark:text-neutral-400"
+                    />
+
+                    {work.location?.link ? (
+                      <a
+                        href={work.location.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-neutral-700 dark:text-neutral-300 hover:underline"
+                      >
+                        {work.location.name}
+                      </a>
+                    ) : (
+                      <span className="text-sm text-neutral-700 dark:text-neutral-300">
+                        {work.location.name}
+                      </span>
+                    )}
+                  </div>
                 )}
               </div>
-            )}
-          </div>
 
-          {/* Tech Stack */}
-          {work.techStack?.length > 0 && (() => {
-            const normalizedTechStack = Array.isArray(work.techStack)
-              ? work.techStack
-              : work.techStack.split(",").map(t => t.trim());
+              {/* Tech Stack */}
+              {work.techStack?.length > 0 && (() => {
+                const normalizedTechStack = Array.isArray(work.techStack)
+                  ? work.techStack
+                  : work.techStack.split(",").map(t => t.trim());
 
-            return (
-              <div className="flex flex-wrap gap-2 py-2">
-                {normalizedTechStack.map((tech, i) => {
-                  const Icon = getIcon(tech);
-                  return (
-                    <span key={i}>
-                      {Icon && <Icon size={24} />}
-                    </span>
-                  );
-                })}
-              </div>
-            );
-          })()}
+                return (
+                  <div className="flex flex-wrap gap-2 py-2 text-neutral-900 dark:text-neutral-100">
+                    {normalizedTechStack.map((tech, i) => {
+                      const Icon = getIcon(tech);
+                      return (
+                        <span key={i}>
+                          {Icon && <Icon size={24} />}
+                        </span>
+                      );
+                    })}
+                  </div>
+                );
+              })()}
 
-          {/* Description */}
-          {work.description?.length > 0 && (
-            <ul className="list-disc list-inside space-y-1 text-base text-neutral-700 dark:text-neutral-300 mb-3">
-              {work.description.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          )}
+              {/* Description */}
+              {work.description?.length > 0 && (
+                <ul className="list-disc list-inside space-y-1 text-base text-neutral-700 dark:text-neutral-300">
+                  {work.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-  </section>
+      </div>
+    </section>
   );
 };
 
