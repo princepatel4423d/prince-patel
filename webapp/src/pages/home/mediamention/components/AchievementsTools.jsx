@@ -11,9 +11,8 @@ const AchievementsTools = () => {
           <FaTrophy size={18} /> Achievements
         </h3>
         <ul className="text-sm text-neutral-600 dark:text-neutral-400 list-disc pl-4 space-y-1">
-          <li>Completed 100+ freelance tasks</li>
+          <li>Completed 50+ Projects</li>
           <li>Built a MERN blog app</li>
-          <li>Top 5% on HackerRank</li>
         </ul>
       </div>
 
@@ -23,7 +22,7 @@ const AchievementsTools = () => {
           <FaJs size={18} /> Tools
         </h3>
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          React, Node.js, MongoDB, Tailwind CSS, Git, VS Code
+          VS Code, Git, GitHub, Postman, Vite, Android Studio
         </p>
       </div>
     </div>
