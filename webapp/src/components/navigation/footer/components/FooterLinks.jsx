@@ -24,7 +24,7 @@ const FooterLinks = () => {
       links: [
         { label: "Contact", href: "/contact" },
         { label: "RSS", href: "/rss.xml", external: true },
-        { label: "LICENSE", href: "https://github.com/princepatel4423d/my-portfolio/blob/main/LICENSE", external: true },
+        { label: "LICENSE", href: "https://github.com/princepatel4423d/prince-patel/blob/main/LICENSE", external: true },
       ],
     },
   ];
