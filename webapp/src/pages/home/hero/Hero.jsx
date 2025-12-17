@@ -65,7 +65,7 @@ const Hero = () => {
                             <FiFileText size={18} weight="duotone" /> Read CV
                         </DarkButton>
                     </Link>
-                    <Link to="/projects">
+                    <Link to="/project">
                         <LightButton>
                             <FaBriefcase size={18} weight="duotone" /> Projects
                         </LightButton>
