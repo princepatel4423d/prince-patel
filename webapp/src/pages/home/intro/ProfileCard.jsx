@@ -48,7 +48,7 @@ const ProfileCard = ({ username, totals }) => {
         </div>
 
         <Link
-          to="/projects"
+          to="/project"
           className="text-sm underline text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition"
         >
           See projects
