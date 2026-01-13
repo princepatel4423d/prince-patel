@@ -17,13 +17,13 @@
     { "name": "HTML5", "icon": "HTML", "faded": false },
     { "name": "CSS3", "icon": "CSS", "faded": false },
     { "name": "Sass", "icon": "Sass", "faded": true },
-    { "name": "JQuery", "icon": "JQuery", "faded": true },
+    { "name": "JQuery", "icon": "JQuery", "faded": false },
     { "name": "Bootstrap", "icon": "Bootstrap", "faded": false },
     { "name": "Vite", "icon": "Vite", "faded": false },
     { "name": "Wordpress", "icon": "Wordpress", "faded": false }
   ],
   "Back-end development": [
-    { "name": "Node.js", "icon": "NodeJS", "faded": true },
+    { "name": "Node.js", "icon": "NodeJS", "faded": false },
     { "name": "ExpressJS", "icon": "ExpressJS", "faded": false },
     { "name": "FastAPI", "icon": "FastAPI", "faded": true },
     { "name": "Django", "icon": "Django", "faded": true },
@@ -32,7 +32,7 @@
   ],
   "Mobile development": [
     { "name": "Flutter", "icon": "Flutter", "faded": true },
-    { "name": "React Native", "icon": "ReactNative", "faded": false },
+    { "name": "React Native", "icon": "ReactNative", "faded": true },
     { "name": "AndroidStudio", "icon": "AndroidStudio", "faded": true },
     { "name": "Swift", "icon": "Swift", "faded": true },
     { "name": "Kotlin", "icon": "Kotlin", "faded": true }
@@ -50,8 +50,8 @@
     { "name": "AWS", "icon": "AWS", "faded": false },
     { "name": "GCP", "icon": "GCP", "faded": true },
     { "name": "Azure", "icon": "Azure", "faded": true },
-    { "name": "Netlify", "icon": "Netlify", "faded": true },
-    { "name": "Vercel", "icon": "Vercel", "faded": true },
+    { "name": "Netlify", "icon": "Netlify", "faded": false },
+    { "name": "Vercel", "icon": "Vercel", "faded": false },
     { "name": "Terraform", "icon": "Terraform", "faded": true },
     { "name": "Linux", "icon": "Linux", "faded": true }
   ],
@@ -62,7 +62,7 @@
     { "name": "Postman", "icon": "Postman", "faded": false },
     { "name": "Figma", "icon": "Figma", "faded": true },
     { "name": "Photoshop", "icon": "Photoshop", "faded": false },
-    { "name": "PyCharm", "icon": "PyCharm", "faded": false },
+    { "name": "PyCharm", "icon": "PyCharm", "faded": true },
     { "name": "VS Code", "icon": "VSCode", "faded": false },
     { "name": "VisualStudio", "icon": "VisualStudio", "faded": false },
     { "name": "Sublime", "icon": "Sublime", "faded": false },
@@ -72,6 +72,6 @@
     { "name": "StackOverflow", "icon": "StackOverflow", "faded": false },
     { "name": "Slack", "icon": "Slack", "faded": true },
     { "name": "Discord", "icon": "Discord", "faded": false },
-    { "name": "Windows", "icon": "Windows", "faded": true }
+    { "name": "Windows", "icon": "Windows", "faded": false }
   ]
 }
